@@ -2,8 +2,5 @@
 
 This repository contains code, libraries, and other files related to the Human Powered Submarine (HPS) UCSD electronics systems.
 
-## LCD_pitch_v0_2
-Contains programs for the 3.5-inch TFT LCD display.
-
 ## libraries/Adafruit_GFX_Library
 Includes the required graphics libraries to support the LCD_pitch_v0_2 code.
