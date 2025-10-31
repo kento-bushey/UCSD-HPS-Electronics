@@ -7,4 +7,5 @@ Includes the required graphics libraries to support the LCD_pitch_v0_2 code.
 
 ## Important libraries
 https://github.com/adafruit/Adafruit-GFX-Library
+
 https://github.com/adafruit/Adafruit_RA8875
