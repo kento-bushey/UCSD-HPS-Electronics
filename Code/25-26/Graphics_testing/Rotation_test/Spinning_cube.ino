@@ -1,5 +1,6 @@
-#include <MyPoint.h>
-#include <MyPolygon.h>
+#include "Graphics/MyPoint.h"
+#include "Graphics/MyPolygon.h"
+
 #include <SPI.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_RA8875.h>
