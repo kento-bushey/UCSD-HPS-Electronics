@@ -3,11 +3,12 @@
 #define SONAR_NUM 1
 #define MAX_DISTANCE 400
 
-NewPing sonar[SONAR_NUM] = {NewPing(8, 9, MAX_DISTANCE);
-}
-;
+NewPing sonar[SONAR_NUM] = {
+  NewPing(8, 9, MAX_DISTANCE)  
+};
 
-void setup() { serial.begin(115200); }
+
+void setup() { Serial.begin(115200); }
 
 void loop() {
   for (int i = 0; i < SONAR_NUM; i++) {
