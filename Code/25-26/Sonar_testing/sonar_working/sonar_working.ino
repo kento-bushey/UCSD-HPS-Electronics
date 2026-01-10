@@ -13,7 +13,7 @@ void setup() { Serial.begin(9600); }
 void loop() {
   float distance = 0;
   for (int i = 0; i < SONAR_NUM; i++) {
-    delay(750);
+    delay(100);
     //Serial.print(i);
     // Serial.print("=");
     distance = sonar[i].ping_cm()/100.0;
