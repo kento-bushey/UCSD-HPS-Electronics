@@ -1,0 +1,2 @@
+Notes: 
+- The sonar sensor does not work reliably in the bucket

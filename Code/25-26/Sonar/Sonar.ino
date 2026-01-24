@@ -4,8 +4,8 @@ uint8_t CS;
 #define COM 0x55
 int Distance = 0;
 SoftwareSerial mySerial1(8, 9); // adjust to reflect input pins of sonar sensor in Arduino 
-SoftwareSerial mySerial2(8, 9); // adjust to reflect input pins of sonar sensor in Arduino 
-SoftwareSerial mySerial3(8, 9); // adjust to reflect input pins of sonar sensor in Arduino 
+SoftwareSerial mySerial2(10, 11); // adjust to reflect input pins of sonar sensor in Arduino 
+SoftwareSerial mySerial3(12, 13); // adjust to reflect input pins of sonar sensor in Arduino 
 void setup() {
   Serial.begin(115200);
   mySerial1.begin(115200);
