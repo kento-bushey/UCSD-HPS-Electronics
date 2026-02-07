@@ -45,7 +45,7 @@ The RA8875 library contains a struct called `Point` that stores an x and a y coo
 
 Create a new point using `struct Point myPoint = {x,y};`
 
-You can access coordinates using `Point.x` and `myPoint.y`
+You can access coordinates using `myPoint.x` and `myPoint.y`
 
 ### Drawing Paths
 Currently, the code supports curves with 1 control point, so any path can be described with 3 arrays:
@@ -58,6 +58,7 @@ Currently, the code supports curves with 1 control point, so any path can be des
 This way, the data for an image can be prepared compactly in advance, with the code calling a custom `drawPath(points, lines, curves)` function.
 
 ## SVG Files
+
 
 
 
