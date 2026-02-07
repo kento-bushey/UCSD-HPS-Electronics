@@ -43,10 +43,10 @@ In this image:
 Currently, the code supports curves with 1 control point, so any path can be described with 3 arrays:
 - `struct Point[] points`, the list of all endpoints and control points.
 - `unsigned int[] lines`, a list of point indices where every two consecutive elements, `a=lines[i]` and `b=lines[i+1]` define a line between points `points[a]` and `points[b]`.
-- `unsigned int[] curves`, a list of point indices where every three consecutive elements defines a curve, <br>so `points[curves[i]]`, `points[curves[i]]`, and `points[curves[i]]` define a bezier curve.
-- Optionally, a 4th resolution element can define the resolution of each curve.
+- `unsigned int[] curves`, a list of point indices where every three consecutive elements defines a curve, <br>so `points[curves[i]]`, `points[curves[i]]`, and `points[curves[i]]` define a bezier curve.<br>(Optionally, a 4th resolution element can define the resolution of each curve.)
 
 This way, the data for an image can be prepared compactly in advance, with the code calling a custom `drawPath(points, lines, curves)` function.
+
 
 
 
