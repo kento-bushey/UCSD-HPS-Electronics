@@ -57,7 +57,6 @@ Currently, the code supports curves with 1 control point, so any path can be des
 
 This way, the data for an image can be prepared compactly in advance, with the code calling a custom `drawPath(points, lines, curves)` function.
 
-## SVG Files
 
 
 
