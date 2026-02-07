@@ -11,7 +11,7 @@ The The RA8875 driver board is connected to the arduino via:
 - GND --> GND
 - VIN --> 5v
 
-## Code & Libraries
+## Libraries
 **Adafruit GFX**
 - General graphics library for LCD boards. 
 
@@ -23,4 +23,10 @@ The The RA8875 driver board is connected to the arduino via:
 
 ## Documentation
 Documentation for the RA8875 library can be found *here*
+
+In addition, the added method `drawBezier(struct Point start, struct Point, end, struct Point control, tuint_16 color)` draws a bezier curve between two points with the control point controlling the curvture. SVG files can be broken down into bezier curves and paths. 
+
+## Getting Started and General Info
+
+
 
