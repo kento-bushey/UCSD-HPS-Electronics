@@ -40,7 +40,7 @@ In this image:
 - P<sub>1</sub> is `control`, meaning the curve will bend towards `control`.
 - `resolution` controls the number of line segments the curve is broken up into
 
-### Points
+### The `Point` struct  
 The RA8875 library contains a struct called `Point` that stores an x and a y coordinate (type `uint16_t`).
 
 Create a new point using `struct Point myPoint = {x,y};`
@@ -58,6 +58,7 @@ Currently, the code supports curves with 1 control point, so any path can be des
 This way, the data for an image can be prepared compactly in advance, with the code calling a custom `drawPath(points, lines, curves)` function.
 
 ## SVG Files
+
 
 
 
