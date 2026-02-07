@@ -27,9 +27,10 @@ Documentation for the RA8875 library can be found [here](https://cdn-learn.adafr
 
 In addition, the added method `drawBezier(struct Point start, struct Point, end, struct Point control, uint16_t resolution, uint16_t color)` draws a bezier curve between two points with the control point controlling the curvture.
 
-![bezier](https://en.wikipedia.org/wiki/B%C3%A9zier_curve#/media/File:B%C3%A9zier_2_big.gif)
+![bezier](https://upload.wikimedia.org/wikipedia/commons/3/3d/B%C3%A9zier_2_big.gif)
 
 In this image, P<sup>0</sup> and  P<sup>2</sup> are `start` and `end`. P<sup>1</sup> is `control`, meaning the curve will bend towards `control`
+
 
 
 
