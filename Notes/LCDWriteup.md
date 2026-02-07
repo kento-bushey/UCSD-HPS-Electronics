@@ -29,7 +29,14 @@ In addition, the added method `drawBezier(struct Point start, struct Point, end,
 
 ![bezier](https://upload.wikimedia.org/wikipedia/commons/3/3d/B%C3%A9zier_2_big.gif)
 
-In this image, P<sub>0</sub> and  P<sup>2</sup> are `start` and `end`. P<sup>1</sup> is `control`, meaning the curve will bend towards `control`
+In this image:
+- P<sub>0</sub> and  P<sub>2</sub> are `start` and `end`.
+- P<sub>1</sub> is `control`, meaning the curve will bend towards `control`.
+- `resolution` controls the number of line segments the curve is broken up into
+
+
+
+
 
 
 
