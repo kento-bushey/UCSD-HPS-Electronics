@@ -1,6 +1,7 @@
 # LCD Information
 
 ![pilot display](https://github.com/kento-bushey/UCSD-HPS-Electronics/blob/main/Notes/SubLCDLayout.png)
+The current design for the pilot's LCD layout for sensor data
 
 ## Circuit
 The The RA8875 driver board is connected to the arduino via:
@@ -50,6 +51,7 @@ Currently, the code supports curves with 1 control point, so any path can be des
 This way, the data for an image can be prepared compactly in advance, with the code calling a custom `drawPath(points, lines, curves)` function.
 
 ## SVG Files
+
 
 
 
