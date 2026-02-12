@@ -1,4 +1,3 @@
-Two LED version of the deadman bouy circuit+code.
-https://www.tinkercad.com/things/4P9jVgQCw7V-em-delay
+[Two LED version of the deadman bouy circuit+code.](https://www.tinkercad.com/things/4P9jVgQCw7V-em-delay)
 
 Notes: In order to use a 6V Electromagnet, we need an external battery, so the actual circuit involves a transistor. There are pictures of the circuit but have not made a cad.
