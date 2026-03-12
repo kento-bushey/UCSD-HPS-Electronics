@@ -1,5 +1,5 @@
 ## LCD Display - Code Structure & Adding New Widgets:
-For general info about the LCD Screen, see [the wiki](https://github.com/kento-bushey/UCSD-HPS-Electronics/wiki/Electronics-Documentation)
+For general info about the LCD Screen, see [the wiki](https://github.com/kento-bushey/UCSD-HPS-Electronics/wiki/LCD-Documentation)
 
 ![subLayout](https://raw.githubusercontent.com/kento-bushey/UCSD-HPS-Electronics/refs/heads/main/Notes/SubLCDLayout.png)
 
