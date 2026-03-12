@@ -20,7 +20,7 @@ by referencing the virtural method `void Draw(sensorValue, color1, color2, color
 <br>It's important that only colors passed into the method get drawn, otherwise erasing with `UnDraw` will not work.
 
 The `Widget` class gets initialized with the following member variables that should get used in each specific implementation of `Draw()`:
-- `RA8868* screen` (this is usually just `tft` in the main program, and should always be passed into the constructor)
+- `Adafruit_RA8875* screen` (this is usually just `tft` in the main program, and should always be passed into the constructor)
 - `struct Point pos` ( {x,y} pair referenced via `pos.x` and `pos.y`)
 - `int w,h` (width and height respectively. Default value is 100px)
 - `int previousValue` (the previous drawn value. Always set this to `val` at the end of `Draw(val)`, so that `UnDraw()` can erase properly.)
