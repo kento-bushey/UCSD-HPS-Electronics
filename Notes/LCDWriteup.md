@@ -14,7 +14,7 @@ The The RA8875 driver board is connected to the arduino via:
 - VIN --> 5v
 
 ## Libraries
-[**Adafruit GFX**](https://github.com/kento-bushey/UCSD-HPS-Electronics/tree/main/libraries/Adafruit_GFX_Library)
+[**Adafruit GFX**](https://github.com/adafruit/Adafruit-gfx-library)
 - General graphics library for LCD boards. 
 
 [**Adafruit RA8875**](https://github.com/kento-bushey/UCSD-HPS-Electronics/tree/main/libraries/Adafruit_RA8875)
