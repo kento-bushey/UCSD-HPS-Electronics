@@ -16,7 +16,7 @@ void setup() {
   Serial.begin(115200);
   mySerial.begin(115200);
 
-  testServo.attach(7) // TODO Change this
+  testServo.attach(7); // TODO Change this
 }
 
 void loop() {
