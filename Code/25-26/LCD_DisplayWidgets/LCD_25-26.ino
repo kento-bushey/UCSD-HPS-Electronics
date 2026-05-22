@@ -50,10 +50,12 @@ void setup(){
     tft.fillScreen(0);
 
     //Specific initialization methods for each widget
-    pitchMeter.InitPitchMeter(100,120,1);            
+    pitchMeter.InitPitchMeter(10.0f*pitchMeter.w, 2.5f*pitchMeter.w,60, 8.0f, 2.0f);            
 
     //Add widgets to fixed length pointer array
     Widgets[0] = &pitchMeter;
+
+    Widgets[0]->DrawBackground(0xFFFF);
 }
 
 float angle=0;
@@ -62,13 +64,15 @@ void loop(){
   //Draw widgets at values:
    
    //ex, pitch meter at 20 degrees in white
-  pitchMeter.Draw(20, color565(0xFF,0xFF,0xFF));
-
+  
+  pitchMeter.Draw(30*sin(((float)millis())/6000.0f), color565(0xFF,0xFF,0xFF),color565(0x30,0xF0,0x20),color565(0xF0,0x20,0x30));
+  
 
 
   //UnDraw all widgets:
   //TODO: compare screen clear with undrawing
    //schedule unDraw()'s to only call on changed sensor values?
+   delay(500);
   for(int i=0; i<numWidgets; i++){
     Widgets[i]->UnDraw(0);
   }

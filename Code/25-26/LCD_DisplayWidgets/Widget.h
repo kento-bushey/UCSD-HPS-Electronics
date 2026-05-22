@@ -26,7 +26,8 @@ class Widget{
           //Main draw function, only draw with color1, color2, and/or color3 so that UnDraw(bgColor) works
           //Always set previousValue=val at the end of the Draw(), again so that UnDraw() works. 
         virtual void Draw(int val, uint16_t color1, uint16_t color2, uint16_t color3) = 0;
-
+        virtual void DrawBackground(uint16_t color1, uint16_t color2, uint16_t color3) = 0;
+        
           //singe and double color methods. Also used for UnDraw(bgColor)
           //These don't need to be overridden, 
           //If using less than 3 colors, simply ignore the last color args in the main Draw()method
@@ -34,6 +35,9 @@ class Widget{
         void Draw(int val, uint16_t color){Draw(val,color,color,color);}
         void Draw(int val, uint16_t color1, uint16_t color2){Draw(val,color1,color2,color2);}
 
+        void DrawBackground(uint16_t color1, uint16_t color2){DrawBackground(color1, color2, color2);}
+        void DrawBackground(uint16_t color){DrawBackground(color, color, color);}
+        
           //Draws back over the widget in black (or given backgound color)
         void UnDraw(uint16_t bgColor){Draw(previousValue, bgColor);}
         void UnDraw(){UnDraw(0);}

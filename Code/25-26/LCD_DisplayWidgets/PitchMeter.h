@@ -7,12 +7,15 @@ class PitchMeter : public Widget{
     using Widget::Widget;
     using Widget::Draw;
 
-    void InitPitchMeter(float radius_, float fov_, float yScale_);
+    void InitPitchMeter(float dist, float radius_, float fov_, float angleScale_, float imgScale_);
     void Draw(int pitch, uint16_t color1,uint16_t color2, uint16_t color3) override;
+    void DrawBackground(uint16_t color1,uint16_t color2, uint16_t color3) override;
 
   private:
     float radius;
+    float distToCenter;
     float tfov2;
-    float yScale;
+    float angleScale;
+    float imgScale;
   
 };
